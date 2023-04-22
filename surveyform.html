@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyCSS.css">
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+
+        <!-- NAME -->
+
+        <p id="name">Name * : </p>
+        <br>
+        <label for="fname">First Name : <input type="text" id="fname" name="fname" required></label>
+        <br>
+        <br>
+        <label for="lname">Last Name : <input type="text" id="lname" name="lname" required></label>
+        <br>
+        <br>
+        <!-- Address -->
+
+        <p id="address">Address * : </p>
+        <p><label for="street">Street * : <input type="text" id="street" name="street" required>
+            </label></p>
+
+        <p><label for="city">City * : <input type="text" id="city" name="city" required>
+            </label></p>
+
+        <p><label for="state">State * :
+                <select name="state" id="state">
+                    <option value="up">Uttar Pradesh</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="maharshtra">Maharashtra</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="madhya pradesh">Madhya Pradesh</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="tamil nadu">Tamil Nadu</option>
+                </select>
+            </label></p>
+
+        <p><label for="pin">Pin Code * : <input type="number" name="pin" id="pin">
+            </label></p>
+
+        <!-- Contact No -->
+        <label for="contact">Contact No * : <input type="number" name="contact" id="contact">
+        </label>
+        <!-- Rating Section     -->
+
+        <p id="qualityProducts">Quality of Products * :
+            Excellent <input type="radio" name="Excellent" id="quality" required>
+            Good <input type="radio" name="Good" id="quality" required>
+            Bad <input type="radio" name="Bad" id="quality" required>
+        </p>
+
+        <p id="moneyProducts">Value For Money * :
+            Excellent <input type="radio" name="Excellent" id="money" required>
+            Good <input type="radio" name="Good" id="money" required>
+            Bad <input type="radio" name="Bad" id="money" required>
+        </p>
+
+        <p id="deliveryProducts">Delivery * :
+            Excellent <input type="radio" name="Excellent" id="delivery" required>
+            Good <input type="radio" name="Good" id="delivery" required>
+            Bad <input type="radio" name="Bad" id="delivery" required>
+        </p>
+
+        <input type="submit" value="Submit Now" id="submit">
+        <input type="reset" value="Reset Now" id="reset">
+
+    </form>
+
+</body>
+
+</html>
